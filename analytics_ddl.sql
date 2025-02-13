@@ -53,6 +53,7 @@ CREATE  TABLE analytics.dim_location (
 	delivery_address     varchar(100)    ,
 	delivery_city        varchar    ,
 	delivery_state       varchar    ,
+	delivery_zip         varchar    ,
 	delivery_region      integer    ,
 	delivery_lat         double precision    ,
 	delivery_long        double precision    ,
@@ -166,6 +167,7 @@ CREATE  TABLE transaction_concept.delivery_location (
 	delivery_region      integer    ,
 	delivery_lat         double precision    ,
 	delivery_long        double precision    ,
+	delivery_zip         varchar,
 	update_ts            timestamp  NOT NULL  ,
 	CONSTRAINT pk_delivery_location PRIMARY KEY ( delivery_location_id )
  );

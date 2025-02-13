@@ -95,6 +95,7 @@ select delivery_location_id
      , delivery_address
      , delivery_city
      , delivery_state
+     , delivery_zip
      , delivery_region
      , delivery_lat
      , delivery_long
@@ -106,6 +107,7 @@ select -1 as delivery_location_id
      , 'Unknown' as delivery_address
      , 'Unknown' as delivery_city
      , 'Unknown' as delivery_state
+     , '00000' as delivery_zip
      , -1 as delivery_region
      , 0 as delivery_lat
      , 0 as delivery_long
